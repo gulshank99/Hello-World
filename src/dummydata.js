@@ -1,22 +1,11 @@
-import c1 from "./Component/images/c1.png";
-import c2 from "./Component/images/c2.png";
-import c3 from "./Component/images/c3.png";
-import c4 from "./Component/images/c4.png";
-import c5 from "./Component/images/c5.png";
-import c6 from "./Component/images/c6.png";
-import c7 from "./Component/images/c7.png";
-import c8 from "./Component/images/c8.png";
-import c9 from "./Component/images/c9.png";
-import back from "./Component/images/back.webp";
-
-  export const coursesCard = [
+export const coursesCard = [
     {
       id: 1,
-      cover: c1,
+      cover: "../images/c1.png",
       coursesName: "Fundamentals of Machine Learning",
       courTeacher: [
         {
-          dcover: back,
+          dcover: "../images/back.webp",
           name: "by John Smith",
           totalTime: "50 lectures (190 hrs)",
         },
@@ -26,11 +15,11 @@ import back from "./Component/images/back.webp";
     },
     {
       id: 2,
-      cover: c2,
+      cover: "../images/c2.png",
       coursesName: "Enhancing AI Skills",
       courTeacher: [
         {
-          dcover: back,
+          dcover: "../images/back.webp",
           name: "by Ram Gurung",
           totalTime: "30 lectures (125 hrs)",
         },
@@ -40,11 +29,11 @@ import back from "./Component/images/back.webp";
     },
     {
       id: 3,
-      cover: c3,
+      cover: "../images/c3.png",
       coursesName: "Solid Principal in Software Engineering",
       courTeacher: [
         {
-          dcover: back,
+          dcover: "../images/back.webp",
           name: "by Saroj Nepal",
           totalTime: "50 lectures (50 hrs)",
         },
@@ -54,11 +43,11 @@ import back from "./Component/images/back.webp";
     },
     {
       id: 4,
-      cover: c4,
+      cover: "../images/c4.png",
       coursesName: "Introducing to OCR",
       courTeacher: [
         {
-          dcover: back,
+          dcover: "../images/back.webp",
           name: "by Prabin Thapa Mager",
           totalTime: "20 lectures (20 hrs)",
         },
@@ -68,11 +57,11 @@ import back from "./Component/images/back.webp";
     },
     {
       id: 5,
-      cover:c5,
+      cover:"../images/c5.png",
       coursesName: "Introducing to Programming with ReactJS",
       courTeacher: [
         {
-          dcover: back,
+          dcover: "../images/back.webp",
           name: "by Sunil Bishowkaram",
           totalTime: "100 lectures (150 hrs)",
         },
@@ -82,11 +71,11 @@ import back from "./Component/images/back.webp";
     },
     {
       id: 6,
-      cover: c6,
+      cover: "../images/c6.png",
       coursesName: "Learn Frontend Programming Language",
       courTeacher: [
         {
-          dcover: back,
+          dcover: "../images/back.webp",
           name: "by Sunil Bishowkaram",
           totalTime: "200 lectures (300 hrs)",
         },
@@ -96,11 +85,11 @@ import back from "./Component/images/back.webp";
     },
     {
       id: 7,
-      cover:c7,
+      cover:"../images/c7.png",
       coursesName: "Introducing to with HTML / CSS",
       courTeacher: [
         {
-          dcover: back,
+          dcover: "../images/back.webp",
           name: "by Price",
           totalTime: "20 lectures (50 hrs)",
         },
@@ -110,11 +99,11 @@ import back from "./Component/images/back.webp";
     },
     {
       id: 8,
-      cover: c8,
+      cover: "../images/c8.png",
       coursesName: "Introducing to with JAVA",
       courTeacher: [
         {
-          dcover: back,
+          dcover: "../images/back.webp",
           name: "by Petter",
           totalTime: "80 lectures (200 hrs)",
         },
@@ -124,11 +113,11 @@ import back from "./Component/images/back.webp";
     },
     {
       id: 9,
-      cover: c9,
+      cover: "../images/c8.png",
       coursesName: "Introducing to with HTML / CSS / JAVASCRIPT",
       courTeacher: [
         {
-          dcover: back,
+          dcover: "../images/back.webp",
           name: "by Petter",
           totalTime: "50 lectures (50 hrs)",
         },
