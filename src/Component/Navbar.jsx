@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
+import {useLocation,Link} from 'react-router-dom'
 import Button from './Button';
 const Navbar = () => {
     let Links =[
       {name:"HOME",link:"/"},
-      {name:"SERVICE",link:"/"},
-      {name:"ABOUT",link:"/"},
-      {name:"BLOG'S",link:"/"},
-      {name:"CONTACT",link:"/"},
+      {name:"SERVICE",link:"/service"},
+      {name:"ABOUT",link:"/about"},
+      {name:"BLOG'S",link:"/blog"},
+      {name:"CONTACT",link:"/contact"},
     ];
+    const location = useLocation();
     let [open,setOpen]=useState(false);
   return (
     <div className='shadow-md w-full fixed top-0 left-0 mb-8'>
@@ -28,7 +30,12 @@ const Navbar = () => {
         {
           Links.map((link)=>(
             <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
-              <a href={link.link} className='text-gray-800 hover:text-gray-400 duration-500'>{link.name}</a>
+              <Link
+                to={link.link}
+                className={`text-gray-800 hover:text-gray-400 duration-500 ${location.pathname === link.link ? 'text-teal-500 font-bold' : ''}`}
+              >
+                {link.name}
+              </Link>
             </li>
           ))
         }
